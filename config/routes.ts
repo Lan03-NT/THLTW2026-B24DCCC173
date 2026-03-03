@@ -16,8 +16,6 @@
 		],
 	},
 
-	///////////////////////////////////
-	// DEFAULT MENU
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
@@ -43,45 +41,52 @@
 		component: './TodoList',
 	},
 
-	// DANH MUC HE THONG
-	// {
-	// 	name: 'DanhMuc',
-	// 	path: '/danh-muc',
-	// 	icon: 'copy',
-	// 	routes: [
-	// 		{
-	// 			name: 'ChucVu',
-	// 			path: 'chuc-vu',
-	// 			component: './DanhMuc/ChucVu',
-	// 		},
-	// 	],
-	// },
+	{
+		path: '/bt1',
+		name: 'BT1',
+		component: './bt1',
+	},
+
+	{
+		name: 'TH01',
+		path: '/th01',
+		routes: [
+			{
+				name: 'Bài 1',
+				path: '/th01/bai1',
+				component: './TH01/Bai1',
+			},
+			{
+				name: 'Bài 2',
+				path: '/th01/bai2',
+				component: './TH01/Bai2',
+			},
+		],
+	},
 
 	{
 		path: '/notification',
+		layout: false,
+		hideInMenu: true,
 		routes: [
 			{
-				path: './subscribe',
+				path: '/notification/subscribe',
 				exact: true,
 				component: './ThongBao/Subscribe',
 			},
 			{
-				path: './check',
+				path: '/notification/check',
 				exact: true,
 				component: './ThongBao/Check',
 			},
 			{
-				path: './',
+				path: '/notification',
 				exact: true,
 				component: './ThongBao/NotifOneSignal',
 			},
 		],
-		layout: false,
-		hideInMenu: true,
 	},
-	{
-		path: '/',
-	},
+
 	{
 		path: '/403',
 		component: './exception/403/403Page',
@@ -92,6 +97,7 @@
 		component: './exception/DangCapNhat',
 		layout: false,
 	},
+
 	{
 		component: './exception/404',
 	},
