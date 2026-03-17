@@ -77,7 +77,11 @@
 			},
 		],
 	},
-
+	{
+		path: '/th03',
+		name: 'TH03',
+		component: './TH03/ChamSocDa',
+	},
 	{
 		path: '/notification',
 		layout: false,
