@@ -47,6 +47,7 @@
 	{
 		name: 'TH01',
 		path: '/th01',
+		icon: 'FolderOutlined', // Đã thêm icon thư mục
 		routes: [
 			{
 				name: 'Bài 1',
@@ -64,6 +65,7 @@
 	{
 		name: 'TH02',
 		path: '/th02',
+		icon: 'FolderOutlined', // Đã thêm icon thư mục
 		routes: [
 			{
 				name: 'Bài 1',
@@ -80,8 +82,19 @@
 	{
 		path: '/th03',
 		name: 'TH03',
+		icon: 'FileOutlined', // Đã thêm icon file tài liệu
 		component: './TH03/ChamSocDa',
 	},
+
+	// === ĐÂY LÀ ROUTE TH04 VỪA THÊM ===
+	{
+		path: '/th04',
+		name: 'TH04',
+		icon: 'BookOutlined', // Đã thêm icon quyển sách
+		component: './TH04',
+	},
+	// ==================================
+
 	{
 		path: '/notification',
 		layout: false,

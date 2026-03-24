@@ -140,5 +140,17 @@
   },
   "gitHooks": {
     "commit-msg": "fabric verify-commit"
-  }
+  },
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lan03-NT/THLTW2026-B24DCCC173.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lan03-NT/THLTW2026-B24DCCC173/issues"
+  },
+  "homepage": "https://github.com/Lan03-NT/THLTW2026-B24DCCC173#readme"
 }
