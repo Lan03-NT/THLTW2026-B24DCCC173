@@ -18,9 +18,8 @@
 
 	{
 		path: '/dashboard',
-		name: 'Dashboard',
-		component: './TrangChu',
-		icon: 'HomeOutlined',
+		name: 'Trang chủ',
+		icon: 'DashboardOutlined',
 	},
 
 	{
@@ -32,30 +31,30 @@
 
 	{
 		path: '/random-user',
-		name: 'RandomUser',
+		name: 'Người dùng ngẫu nhiên',
 		component: './RandomUser',
-		icon: 'ArrowsAltOutlined',
+		icon: 'UserSwitchOutlined',
 	},
 
 	{
 		path: '/todo-list',
-		name: 'TodoList',
-		icon: 'OrderedListOutlined',
+		name: 'Danh sách công việc',
+		icon: 'FormOutlined',
 		component: './TodoList',
 	},
 
 	{
-		name: 'TH01',
+		name: 'TH01 - Thực hành',
 		path: '/th01',
-		icon: 'FolderOutlined', // Đã thêm icon thư mục
+		icon: 'ExperimentOutlined',
 		routes: [
 			{
-				name: 'Bài 1',
+				name: 'Bài tập 1',
 				path: '/th01/bai1',
 				component: './TH01/Bai1',
 			},
 			{
-				name: 'Bài 2',
+				name: 'Bài tập 2',
 				path: '/th01/bai2',
 				component: './TH01/Bai2',
 			},
@@ -63,37 +62,43 @@
 	},
 
 	{
-		name: 'TH02',
+		name: 'TH02 - Phát triển',
 		path: '/th02',
-		icon: 'FolderOutlined', // Đã thêm icon thư mục
+		icon: 'CodeOutlined',
 		routes: [
 			{
-				name: 'Bài 1',
+				name: 'Bài tập 1',
 				path: '/th02/bt1',
 				component: './TH02/Bt1',
 			},
 			{
-				name: 'Bài 2',
+				name: 'Bài tập 2',
 				path: '/th02/bt2',
 				component: './TH02/Bt2',
 			},
 		],
 	},
+
 	{
 		path: '/th03',
-		name: 'TH03',
-		icon: 'FileOutlined', // Đã thêm icon file tài liệu
+		name: 'TH03 - Chăm sóc da',
+		icon: 'SmileOutlined',
 		component: './TH03/ChamSocDa',
 	},
 
-	// === ĐÂY LÀ ROUTE TH04 VỪA THÊM ===
 	{
 		path: '/th04',
-		name: 'TH04',
-		icon: 'BookOutlined', // Đã thêm icon quyển sách
+		name: 'TH04 - Tài liệu',
+		icon: 'ReadOutlined',
 		component: './TH04',
 	},
-	// ==================================
+
+	{
+		path: '/th05',
+		name: 'TH05 - Quản lý CLB',
+		icon: 'TeamOutlined',
+		component: './TH05',
+	},
 
 	{
 		path: '/notification',
