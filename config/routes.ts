@@ -101,6 +101,13 @@
 	},
 
 	{
+		path: '/th06',
+		name: 'TH06 - Travel',
+		icon: 'CompassOutlined',
+		component: './TH06',
+	},
+
+	{
 		path: '/notification',
 		layout: false,
 		hideInMenu: true,
