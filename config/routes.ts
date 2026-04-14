@@ -108,6 +108,13 @@
 	},
 
 	{
+		path: '/ktgk',
+		name: 'KTGK - Quản lý KH',
+		icon: 'BookOutlined',
+		component: './KTGK',
+	},
+
+	{
 		path: '/notification',
 		layout: false,
 		hideInMenu: true,
