@@ -115,6 +115,54 @@
 	},
 
 	{
+		name: 'TH07 - GlowDiary Blog',
+		path: '/th07',
+		icon: 'ContainerOutlined',
+		routes: [
+			{
+				name: 'Trang chủ Blog',
+				path: '/th07/index',
+				component: './TH07/index',
+			},
+			{
+				name: 'Chi tiết Review',
+				path: '/th07/chi-tiet/:maBaiViet',
+				component: './TH07/ChiTietBaiViet',
+				hideInMenu: true,
+			},
+			{
+				name: 'Về Blogger',
+				path: '/th07/gioi-thieu',
+				component: './TH07/GioiThieu',
+			},
+			{
+				name: 'Quản trị nội dung',
+				path: '/th07/admin',
+				routes: [
+					{
+						name: 'Quản lý bài viết',
+						path: '/th07/admin/bai-viet',
+						component: './TH07/Admin/index',
+					},
+					{
+						name: 'Quản lý danh mục',
+						path: '/th07/admin/tags',
+						component: './TH07/Admin/Tags',
+					},
+					{
+						path: '/th07/admin',
+						redirect: '/th07/admin/bai-viet',
+					},
+				],
+			},
+			{
+				path: '/th07',
+				redirect: '/th07/index',
+			},
+		],
+	},
+
+	{
 		path: '/notification',
 		layout: false,
 		hideInMenu: true,
