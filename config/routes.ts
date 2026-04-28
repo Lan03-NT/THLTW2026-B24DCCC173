@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -158,6 +158,51 @@
 			{
 				path: '/th07',
 				redirect: '/th07/index',
+			},
+		],
+	},
+
+	{
+		name: 'TH08 - Sức khỏe & Thể dục',
+		path: '/th08',
+		icon: 'HeartOutlined',
+		routes: [
+			{
+				name: 'Quản lý sức khỏe',
+				path: '/th08/tracking',
+				icon: 'DashboardOutlined',
+				routes: [
+					{
+						name: 'Trang chủ',
+						path: '/th08/tracking/dashboard',
+						component: './TH08/TrangChu',
+					},
+					{
+						name: 'Nhật ký tập luyện',
+						path: '/th08/tracking/workout',
+						component: './TH08/NhatKyTapLuyen',
+					},
+					{
+						name: 'Chỉ số sức khỏe',
+						path: '/th08/tracking/health',
+						component: './TH08/ChiSoSucKhoe',
+					},
+					{
+						name: 'Quản lý mục tiêu',
+						path: '/th08/tracking/goals',
+						component: './TH08/QuanLyMucTieu',
+					},
+				],
+			},
+			{
+				name: 'Thư viện bài tập',
+				path: '/th08/library',
+				icon: 'ReadOutlined',
+				component: './TH08/ThuVienBaiTap',
+			},
+			{
+				path: '/th08',
+				redirect: '/th08/tracking/dashboard',
 			},
 		],
 	},
