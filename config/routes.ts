@@ -208,6 +208,13 @@ export default [
 	},
 
 	{
+		path: '/th09',
+		name: 'TH09- Kanban board',
+		icon: 'ProjectOutlined',
+		component: './TH09',
+	},
+
+	{
 		path: '/notification',
 		layout: false,
 		hideInMenu: true,
